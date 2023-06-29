@@ -1,0 +1,12 @@
+{
+  "errorCode": 0,
+  "data": {
+    "isBlockStatus": {
+      "errorMessage": "Block incoming chat has been set up.",
+      "errorCode": 1004,
+      "data": {
+        "templateMessage": "현재 문의량이 많아 상담사 연결이 어렵습니다.\n잠시 후 다시 이용해 주시기 바랍니다."
+      }
+    }
+  }
+}

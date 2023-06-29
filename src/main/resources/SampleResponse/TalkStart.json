@@ -1,0 +1,46 @@
+{
+  "errorCode": 0,
+  "data": {
+    "talkId": "TCKT0000000071",
+    "gatewayTalkId": "TCKT0000000071",
+    "templateMessage": "현재 대기고객 수는 3명이고,\n고객님의 예상 대기시간은 약 6분 입니다.",
+    "gatewayCustomerId": "test",
+    "logClientId": "",
+    "refTalkId": "TCKT0000000071",
+    "isReceiptOutoftime": false,
+    "messages": [
+      {
+        "talkId": "TCKT0000000071",
+        "accountId": "{NO-AGENT}",
+        "type": "MSG",
+        "msg": "테스트문의",
+        "ext": null,
+        "sender": null,
+        "flag": "C",
+        "refTalkId": "TCKT0000000071",
+        "tranTicketPosition": "NONE",
+        "agentReadFlag": "N",
+        "customerReadFlag": "Y",
+        "seq": 0,
+        "filename": null,
+        "cdate": "20160421114004"
+      },
+      {
+        "talkId": "TCKT0000000071",
+        "accountId": "{NO-AGENT}",
+        "type": "REG",
+        "msg": "상담이 접수되었습니다.\n상담사가 연결될 때까지 기다려 주시면 빠른 안내 드리도록 하겠습니다.",
+        "ext": null,
+        "sender": "SYSTEM",
+        "flag": "S",
+        "refTalkId": "TCKT0000000071",
+        "tranTicketPosition": "NONE",
+        "agentReadFlag": "Y",
+        "customerReadFlag": "Y",
+        "seq": 1,
+        "filename": null,
+        "cdate": "20160421114004"
+      }
+    ]
+  }
+}

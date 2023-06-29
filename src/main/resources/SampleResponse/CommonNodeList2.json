@@ -1,0 +1,29 @@
+{
+  "errorCode": 0,
+  "data": {
+    "nodeList": [
+      {
+        "parentId": "NODE0000000001",
+        "nodeNamePath": null,
+        "nodeId": "NODE0000000003",
+        "alias": null,
+        "nodeIdPath": null,
+        "description": null,
+        "sortOrder": 1,
+        "nodeName": "예금",
+        "depth": 2
+      },
+      {
+        "parentId": "NODE0000000001",
+        "nodeNamePath": null,
+        "nodeId": "NODE0000000004",
+        "alias": null,
+        "nodeIdPath": null,
+        "description": null,
+        "sortOrder": 2,
+        "nodeName": "적금",
+        "depth": 2
+      }
+    ]
+  }
+}

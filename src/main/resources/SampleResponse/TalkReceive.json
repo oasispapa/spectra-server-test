@@ -1,0 +1,24 @@
+{
+  "errorCode": 0,
+  "data": {
+    "messages": [
+      {
+        "talkId": "TCKT0000000071",
+        "accountId": "manager",
+        "type": "MSG",
+        "preTalkId": "",
+        "msg": "예금상품은 비과세 혜택이 있는 XX 상품이 괜찮습니다.",
+        "ext": null,
+        "sender": "매니져",
+        "flag": "A",
+        "refTalkId": "TCKT0000000071",
+        "tranTicketPosition": "NONE",
+        "agentReadFlag": "Y",
+        "customerReadFlag": "Y",
+        "seq": 5,
+        "filename": null,
+        "cdate": "20160421131934"
+      }
+    ]
+  }
+}

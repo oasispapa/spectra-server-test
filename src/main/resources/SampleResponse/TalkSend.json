@@ -1,0 +1,39 @@
+{
+  "errorCode": 0,
+  "data": {
+    "messages": [
+      {
+        "talkId": "TCKT0000000071",
+        "accountId": "manager",
+        "type": "MSG",
+        "msg": "안녕하세요. 상담사 매니져 입니다. \n무엇을 도와드릴까요?",
+        "ext": null,
+        "sender": "매니져",
+        "flag": "A",
+        "refTalkId": "TCKT0000000071",
+        "tranTicketPosition": "NONE",
+        "agentReadFlag": "Y",
+        "customerReadFlag": "Y",
+        "seq": 2,
+        "filename": null,
+        "cdate": "20160421131231"
+      },
+      {
+        "talkId": "TCKT0000000071",
+        "accountId": "manager",
+        "type": "MSG",
+        "msg": "예금상품 추천해주실거 없나요?",
+        "ext": null,
+        "sender": "매니져",
+        "flag": "C",
+        "refTalkId": "TCKT0000000071",
+        "tranTicketPosition": "NONE",
+        "agentReadFlag": "N",
+        "customerReadFlag": "Y",
+        "seq": 3,
+        "filename": null,
+        "cdate": "20160421131311"
+      }
+    ]
+  }
+}

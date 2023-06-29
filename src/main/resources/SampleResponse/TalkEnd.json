@@ -1,0 +1,21 @@
+{
+  "errorCode": 0,
+  "data": {
+    "messages": [
+      {
+        "sender": "SYSTEM",
+        "talkId": "TCKT0000000071",
+        "accountId": "manager",
+        "flag": "S",
+        "agentReadFlag": "N",
+        "customerReadFlag": "Y",
+        "seq": 6,
+        "filename": null,
+        "cdate": "20160421132121",
+        "type": "CEN",
+        "msg": "고객님께서 상담을 종료하셨습니다.\n이용해 주셔서 감사합니다.",
+        "ext": null
+      }
+    ]
+  }
+}

@@ -5,6 +5,8 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.util.HtmlUtils;
 
+import java.util.Map;
+
 @Controller
 public class SocketController {
 //    @MessageMapping("/chat")
@@ -17,12 +19,16 @@ public class SocketController {
 //        return rtnMsg;
 //    }
 
-    @MessageMapping("/chat")
-    @SendTo("/topic/greetings")
-    public ResFromSpectraSocketDto chat(ResFromSpectraSocketDto msg) throws Exception{
-        System.out.println("chat IN!!!!" + msg.getTalkId());
-        Thread.sleep(10000); // simulated delay
-        ResFromSpectraSocketDto dto = ResFromSpectraSocketDto.builder().talkId("TCKT0000000071").eventId("NEW_MESSAGE").build();
+    @MessageMapping("/members")
+    @SendTo("/talk/event")
+    public ResFromSpectraSocketDto chat(ReqToSpectraSocketDto msg) throws Exception{
+        System.out.println("chat IN!!!!" + msg.getUser() + "  |  " +  msg.getStatus());
+        Thread.sleep(4000); // simulated delay
+        ResFromSpectraSocketDto dto = ResFromSpectraSocketDto.builder()
+                .talkId("TCKT0000000071")
+                .__event_id__("NEW_MESSAGE")
+                .updatedBy(msg.getUser())
+                .build();
         System.out.println(dto);
         return dto;
     }

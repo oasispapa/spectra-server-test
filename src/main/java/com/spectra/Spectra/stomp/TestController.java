@@ -12,7 +12,7 @@ public class TestController {
     @SendTo("/topic/greetings")
     public ResFromSpectraSocketDto test() {
 //        Message rtnMsg = new Message("server restcontroller !", "hihihi!");
-        ResFromSpectraSocketDto dto = ResFromSpectraSocketDto.builder().talkId("1").eventId("NEW_MESSAGE").build();
+        ResFromSpectraSocketDto dto = ResFromSpectraSocketDto.builder().talkId("1").__event_id__("NEW_MESSAGE").build();
 
         System.out.println(dto);
         return dto;

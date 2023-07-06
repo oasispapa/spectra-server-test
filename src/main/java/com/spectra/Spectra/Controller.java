@@ -27,15 +27,28 @@ public class Controller {
     @PostMapping("")
     public @ResponseBody JsonNode responseTest(@RequestBody ReqDto reqDto) throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
-        String command = reqDto.getCommand();
-        String subcommand = reqDto.getSubcommands();
+        ReqDto.Cmd cmd = reqDto.getCmd();
+        String command = cmd.getCommand();
+        String subcommand = cmd.getSubcommands();
+        String parentId = cmd.getParentId();
+
+        System.out.println("command : " + command);
 
         final Set<String> components = new HashSet<>(Arrays.asList(command, "SimpleImage"));
         String data = "";
         String path = "";
 
         if (components.contains(command)) {
-            path = "SampleResponse/" + command + ".json";
+            if ("CommonNodeList".equals(command)) {
+                System.out.println("parentId : " + parentId);
+                if ("NODE0000000001".equals(parentId)) {
+                    path = "SampleResponse/CommonNodeList2.json";
+                } else {
+                    path = "SampleResponse/CommonNodeList.json";
+                }
+            } else {
+                path = "SampleResponse/" + command + ".json";
+            }
         } else {
             throw new Exception("no subcommand !! ");
         }

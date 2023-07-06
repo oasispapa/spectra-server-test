@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResFromSpectraSocketDto {
-    private String eventId;
+    private String __event_id__;
     private String talkId;
     private String serviceType;
     private String updatedBy;

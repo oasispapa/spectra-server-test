@@ -24,8 +24,11 @@ public class SocketController {
     public ResFromSpectraSocketDto chat(ReqToSpectraSocketDto msg) throws Exception{
         System.out.println("chat IN!!!!" + msg.getUser() + "  |  " +  msg.getStatus());
         Thread.sleep(4000); // simulated delay
+        String talkId = "TCKT0000000071";
+
+        if(msg.getUser().equals("4444")) talkId = "TCKT0000000072";
         ResFromSpectraSocketDto dto = ResFromSpectraSocketDto.builder()
-                .talkId("TCKT0000000071")
+                .talkId(talkId)
                 .__event_id__("NEW_MESSAGE")
                 .updatedBy(msg.getUser())
                 .build();

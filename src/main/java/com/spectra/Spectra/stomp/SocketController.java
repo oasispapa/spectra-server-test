@@ -26,7 +26,7 @@ public class SocketController {
         Thread.sleep(4000); // simulated delay
         String talkId = "TCKT0000000071";
 
-        if(msg.getUser().equals("4444")) talkId = "TCKT0000000072";
+//        if(msg.getUser().equals("4444")) talkId = "TCKT0000000072";
         ResFromSpectraSocketDto dto = ResFromSpectraSocketDto.builder()
                 .talkId(talkId)
                 .__event_id__("NEW_MESSAGE")
